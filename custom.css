@@ -1,0 +1,369 @@
+@font-face {
+  font-family: 'soccer';
+  src: url('SoccerLeague.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+} 
+.designown, .mobilelayout, .mainheading, .color-buttons>h4, .pattern-buttons>h4, .DesktopLayout>h4, .DesktopLayout>h3{
+  font-family: 'soccer'!important;
+}
+.font-soccer{
+  font-family: 'soccerLeague';
+}
+
+
+.mainheading{
+  font-size: 4.5rem;
+}
+
+ /* Hide pattern color buttons when needed */
+   .hidden {
+    display: none;
+  }
+  .upload-box {
+    border: 2px dashed #ccc;
+    padding: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+.upload-box span{
+  color: blue;
+}
+
+#myCarousel img {
+    /* height: 450px; */
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  
+  #thumbSlider .carousel-inner {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  #thumbSlider .carousel-inner .row {
+    overflow: hidden;
+  }
+  
+  #thumbSlider .carousel-inner .thumb:hover {
+    cursor: pointer;
+  }
+  
+  #thumbSlider .carousel-inner .thumb.active img {
+    opacity: 1;
+  }
+  
+  #thumbSlider .carousel-inner img {
+    /* height: 150px; */
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    opacity: 0.5;
+  }
+  
+  #thumbSlider .carousel-inner img:hover {
+    opacity: 1;
+  }
+  
+  #thumbSlider .carousel-inner .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='%23000'%20viewBox='0%200%208%208'%3E%3Cpath%20d='M5.25%200l-4%204%204%204%201.5-1.5-2.5-2.5%202.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  }
+  
+  #thumbSlider .carousel-inner .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='%23000'%20viewBox='0%200%208%208'%3E%3Cpath%20d='M2.75%200l-1.5%201.5%202.5%202.5-2.5%202.5%201.5%201.5%204-4-4-4z'/%3E%3C/svg%3E");
+  }
+  
+.base-white{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 2rem;
+    height: 2rem;
+}
+.base-black{
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 2rem;
+    height: 2rem;
+}
+.base-red{
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 2rem;
+    height: 2rem;
+}
+.base-blue{
+    background-color: blue;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 2rem;
+    height: 2rem;
+}
+.base-orange{
+    background-color: orange;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 2rem;
+    height: 2rem;
+}
+.base-yellow{
+    background-color: yellow;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 2rem;
+    height: 2rem;
+}
+.base-green{
+    background-color: green;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 2rem;
+    height: 2rem;
+}
+.pattern-buttons>button>img{
+    width: 55px;
+    /* border: 2px solid black;
+    border-radius: 50%;
+    overflow: hidden; */
+}
+.pattern-buttons>button{
+    width: 60px;
+    height: 60px;
+    border: 2px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#leftLogoPreview {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+}
+/* Right-Side Logo Preview */
+#rightLogoPreview {
+  position: absolute;
+  top: 25%;    /* Adjust as needed for your jersey positioning */
+  left: 54%;   /* Position on the right side of the jersey */
+  width: 30px; /* Size of the logo */
+  height: 30px;
+  display: none;
+}
+#playerNameDisplay,
+#playerNumberDisplay {
+    text-transform: uppercase; /* Ensures text is always in uppercase */
+}
+
+
+/* <!--=================== Mobile responsive Start===================--> */
+#demo {  
+  /* background: linear-gradient(112deg, #ffffff 50%, antiquewhite 50%); */
+  background-color: #ffffff;  
+  max-width: 900px;  
+  margin: auto  
+}  
+.carousel-caption {  
+  position: initial;  
+  z-index: 10;  
+  padding: 5rem 8rem;  
+  color: rgba(78, 77, 77, 0.856);  
+  text-align: center;  
+  font-size: 1.2rem;  
+  font-style: italic;  
+  font-weight: bold;  
+  line-height: 2rem  
+}  
+p {  
+  margin:0px;  
+  display: inline-block;  
+  padding:1em;  
+  vertical-align: top;  
+  font-family: 'Open Sans', sans-serif;  
+  font-size: 16px;  
+  line-height: 28px;  
+/* color: #f06d06;   */
+}  
+@media(max-width:767px) {  
+  .carousel-caption {  
+      position: initial;  
+      z-index: 10;  
+      padding: 3rem 2rem;  
+      color: rgba(78, 77, 77, 0.856);  
+      text-align: center;  
+      font-size: 0.7rem;  
+      font-style: italic;  
+      font-weight: bold;  
+      line-height: 1.5rem;  
+  }  
+}  
+.carousel-caption img {  
+  width: 6rem;  
+  border-radius: 5rem;  
+  /* margin-top: 2rem   */
+}  
+@media(max-width:767px) {  
+  .carousel-caption img {  
+      width: 4rem;  
+      border-radius: 4rem;  
+      margin-top: 1rem;  
+  }  
+}  
+#image-caption {  
+  font-style: normal;  
+  font-size: 1rem;  
+  margin-top: 0.5rem;  
+  color: #f06d06;  
+}  
+@media(max-width:767px) {  
+  #image-caption {  
+      font-style: normal;  
+      font-size: 0.6rem;  
+      margin-top: 0.5rem;  
+  }  
+}  
+i {  
+  background-color: #343a40;  
+  padding: 1.4rem  
+}  
+@media(max-width:767px) {  
+  i {  
+      padding: 0.8rem  
+  }  
+}  
+.carousel-control-prev {  
+  justify-content: flex-start;  
+}  
+.carousel-control-next {  
+  justify-content: flex-end;  
+}  
+.carousel-control-prev{
+  transition: none;  
+  opacity: unset;
+}
+.carousel-control-next {  
+  transition: none;  
+  opacity: unset;  
+}
+.base-white{
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 2rem;
+  height: 2rem;
+}
+.base-black{
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 2rem;
+  height: 2rem;
+}
+.base-red{
+  background-color: red;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 2rem;
+  height: 2rem;
+}
+.base-blue{
+  background-color: blue;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 2rem;
+  height: 2rem;
+}
+.base-orange{
+  background-color: orange;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 2rem;
+  height: 2rem;
+}
+.base-yellow{
+  background-color: yellow;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 2rem;
+  height: 2rem;
+}
+.base-green{
+  background-color: green;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 2rem;
+  height: 2rem;
+}
+.pattern-buttons>button>img{
+  width: 55px;
+  /* border: 2px solid black;
+  border-radius: 50%;
+  overflow: hidden; */
+}
+.pattern-buttons>button{
+  width: 60px;
+  height: 60px;
+  border: 2px solid black;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.small-png>img{
+  width: 40px;
+}
+.small-png{
+  width: 60px;
+  height: 60px;
+  border: 2px solid black;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.mobilelayout{
+  display: none;
+}
+
+@media(max-width:991px) {  
+  .mobilelayout{
+    display: block;
+  }
+  .DesktopLayout{
+    display: none;
+  }
+  #thumbSlider .carousel-inner img {
+    width: 70px;
+  }
+}
+
+@media(max-width:500px) {
+  #myCarousel img {
+    width: 340px;
+  }
+  .mainheading{
+    font-size: 2rem;
+  }
+
+  #leftLogoPreview{
+    position: absolute;
+    top: 20%;
+    left: 35%!important;
+    width: 20px;
+    height: 20px;
+  }
+  #rightLogoPreview {
+    position: absolute;
+    top: 25%;    /* Adjust as needed for your jersey positioning */
+    left: 57%!important;   /* Position on the right side of the jersey */
+    width: 30px; /* Size of the logo */
+    height: 30px;
+    display: none;
+  }
+}

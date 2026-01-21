@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheinic</title>
+    <link rel="shortcut icon" href="img/sheinic_logo_Final.png" type="image/png">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel = "stylesheet"  href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+      <!-- Page Preloder -->
+      <div id="preloder">
+        <div class="loader"></div>
+    </div>
+    
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__close">+</div>
+        <ul class="offcanvas__widget">
+            <li><span class="icon_search search-switch"></span></li>
+            <li><a href="#"><span class="icon_heart_alt"></span>
+                    <div class="tip">2</div>
+                </a></li>
+            <li><a href="#"><span class="icon_bag_alt"></span>
+                    <div class="tip">2</div>
+                </a></li>
+        </ul>
+        <div class="offcanvas__logo">
+            <a href="index.html"><img src="img/sheinic_logo_Final.png" alt="" width="60px"></a>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <div class="offcanvas__auth">
+            <a href="#">Login</a>
+            <a href="#">Register</a>
+        </div>
+    </div>
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-3 col-lg-2">
+                    <div class="header__logo">
+                        <a href="index.html"><img src="img/Shenic-Final-Logo.png" alt="" width="150px"></a>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-7">
+                    <nav class="header__menu">
+                        <ul>
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="women.html">Women’s</a></li>
+                            <li><a href="mens.html">Men’s</a></li>
+                            <li><a href="shop.html">Customization</a></li>
+                            <li><a href="nasamerch.html">Nasa Merch</a></li>
+                            <!-- <li><a href="blog.html">Blog</a></li> -->
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3">
+                    <div class="header__right">
+                        <div class="header__right__auth">
+                            <a href="#">Login</a>
+                            <a href="#">Register</a>
+                        </div>
+                        <ul class="header__right__widget">
+                            <li><span class="icon_search search-switch"></span></li>
+                            <li><a href="#"><span class="icon_heart_alt"></span>
+                                <div class="tip">2</div>
+                            </a></li>
+                            <li><a href="#"><span class="icon_bag_alt"></span>
+                                <div class="tip">2</div>
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="canvas__open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <div class="container-fluid px-5 designown">
+        <h1 class="text-center mb-4 py-4 mainheading">Customize Your Own Jersey</h1>
+        <div class="row">
+            <!-- left side bar  -->
+            <div class="col-lg-3 DesktopLayout">
+                <!-- Buttons to Change T-Shirt Pattern -->
+                <div class="pattern-buttons">
+                    <h4>Choose Pattern</h4>
+                    <hr>
+                    <button onclick="changePattern('essential')"><img
+                            src="custom_img/tshirt_base_white_sleeve_white_collar_white_pattern_essential_patterncolor_plain.png"
+                            alt=""></button>
+                    <button onclick="changePattern('bottompieces')"><img
+                            src="custom_img/tshirt_base_white_sleeve_white_collar_white_pattern_bottompieces_patterncolor_blue.png"
+                            alt=""></button>
+                    <button onclick="changePattern('veins')"><img
+                            src="custom_img/tshirt_base_white_sleeve_white_collar_white_pattern_veins_patterncolor_blue.png"
+                            alt=""></button>
+                    <button onclick="changePattern('pieces')" disabled><img
+                            src="custom_img/tshirt_base_white_sleeve_white_collar_white_pattern_pieces_patterncolor_blue.png"
+                            alt=""></button>
+                </div>
+                <!-- Buttons to Change T-Shirt Base Color -->
+                <div class="color-buttons">
+                    <h4>Base Color</h4>
+                    <hr>
+                    <button class="base-white"
+                        onclick="changeTshirt('white', currentSleeveColor, currentCollarColor, currentPattern, currentPatternColor)"></button>
+                    <button class="base-black"
+                        onclick="changeTshirt('black', currentSleeveColor, currentCollarColor, currentPattern, currentPatternColor)"></button>
+                    <button class="base-red"
+                        onclick="changeTshirt('red', currentSleeveColor, currentCollarColor, currentPattern, currentPatternColor)"></button>
+                    <button class="base-blue"
+                        onclick="changeTshirt('blue', currentSleeveColor, currentCollarColor, currentPattern, currentPatternColor)"></button>
+                    <button class="base-orange"
+                        onclick="changeTshirt('orange', currentSleeveColor, currentCollarColor, currentPattern, currentPatternColor)"></button>
+                    <button class="base-yellow"
+                        onclick="changeTshirt('yellow', currentSleeveColor, currentCollarColor, currentPattern, currentPatternColor)"></button>
+                    <button class="base-green"
+                        onclick="changeTshirt('green', currentSleeveColor, currentCollarColor, currentPattern, currentPatternColor)"></button>
+                </div>
+                <!-- Buttons to Change T-Shirt Sleeve Color -->
+                <div class="color-buttons">
+                    <h4>Sleeve Color</h4>
+                    <hr>
+                    <button class="base-white"
+                        onclick="changeTshirt(currentBaseColor, 'white', currentCollarColor, currentPattern, currentPatternColor)"></button>
+                    <button class="base-black"
+                        onclick="changeTshirt(currentBaseColor, 'black', currentCollarColor, currentPattern, currentPatternColor)"></button>
+                    <button class="base-red"
+                        onclick="changeTshirt(currentBaseColor, 'red', currentCollarColor, currentPattern, currentPatternColor)"></button>
+                    <button class="base-blue"
+                        onclick="changeTshirt(currentBaseColor, 'blue', currentCollarColor, currentPattern, currentPatternColor)"></button>
+                    <button class="base-orange"
+                        onclick="changeTshirt(currentBaseColor, 'orange', currentCollarColor, currentPattern, currentPatternColor)"></button>
+                    <button class="base-yellow"
+                        onclick="changeTshirt(currentBaseColor, 'yellow', currentCollarColor, currentPattern, currentPatternColor)"></button>
+                    <button class="base-green"
+                        onclick="changeTshirt(currentBaseColor, 'green', currentCollarColor, currentPattern, currentPatternColor)"></button>
+                </div>
+                <!-- Buttons to Change T-Shirt Collar Color -->
+                <div class="color-buttons">
+                    <h4>Collar Color</h4>
+                    <hr>
+                    <button class="base-white"
+                        onclick="changeTshirt(currentBaseColor, currentSleeveColor, 'white', currentPattern, currentPatternColor)"></button>
+                    <button class="base-black" id="blackcollar"
+                        onclick="changeTshirt(currentBaseColor, currentSleeveColor, 'black', currentPattern, currentPatternColor)"></button>
+                </div>
+                <!-- Buttons to Change T-Shirt Pattern Color -->
+                <div id="patternColorButtons" class="color-buttons">
+                    <h4>Pattern Color</h4>
+                    <hr>
+                    <button class="base-red" id="patternColorRed"
+                        onclick="changeTshirt(currentBaseColor, currentSleeveColor, currentCollarColor, currentPattern, 'red')"></button>
+                    <button class="base-blue" id="patternColorBlue"
+                        onclick="changeTshirt(currentBaseColor, currentSleeveColor, currentCollarColor, currentPattern, 'blue')"></button>
+                    <button class="base-green" id="patternColorGreen"
+                        onclick="changeTshirt(currentBaseColor, currentSleeveColor, currentCollarColor, currentPattern, 'green')"></button>
+                    <button class="base-orange" id="patternColorOrange"
+                        onclick="changeTshirt(currentBaseColor, currentSleeveColor, currentCollarColor, currentPattern, 'orange')"></button>
+                    <button class="base-white" id="patternColorWhite"
+                        onclick="changeTshirt(currentBaseColor, currentSleeveColor, currentCollarColor, currentPattern, 'white')"></button>
+                    <button class="base-black" id="patternColorBlack"
+                        onclick="changeTshirt(currentBaseColor, currentSleeveColor, currentCollarColor, currentPattern, 'black')"></button>
+                </div>
+                <!-- Logo on Left Side -->
+                <h4>Team Logo - Left Side</h4>
+                <hr>
+                <div class="upload-box mb-4" id="uploadBox">
+                    Drag & Drop or <span>Browse</span><br> PNG, WEBP
+                    <input type="file" id="fileInput" style="display: none;">
+                    <div id="fileName" class="file-name"></div>
+                </div>
+            </div>
+            <!-- image preview-->
+            <div class="col-lg-6">
+
+                <!-- Main-Slideelement -->
+                <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block" id="tshirtFront"
+                                src="custom_img/tshirt_base_white_sleeve_white_collar_white_pattern_essential_patterncolor_plain.png"
+                                alt="Customizable T-Shirt Front">
+                                <!-- Left Logo Preview -->
+                            <img id="leftLogoPreview" style="position: absolute; top: 24%; left: 43%; width: 30px; height: 30px; display: none;">
+                             <!-- Right Logo Preview -->
+                            <img id="rightLogoPreview" style="position: absolute; top: 24%; left: 54%; width: 30px; height: 30px; display: none;">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block" id="tshirtBack"
+                                src="custom_img/bs_tshirt_base_white_sleeve_white_collar_white_pattern_essential_patterncolor_plain.png"
+                                alt="Customizable T-Shirt Back">
+                            <div id="playerNameDisplay" style="position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%); font-size: 32px; font-weight: bold; color: black;"></div>
+                            <div id="playerNumberDisplay" style="position: absolute; top: 47%; left: 50%; transform: translate(-50%, -50%); font-size: 50px; font-weight: bold; color: black;"></div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block" id="tshirtBack"
+                                src="Size_Chart_Of_Unisex_Round_Neck.webp"
+                                alt="Customizable T-Shirt Back">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main-Slider-Element ends -->
+                <!-- Thumb-Slider-Element starts -->
+                <div id="thumbSlider" class="carousel slide container" data-interval="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row" id="carousel-item-mobile">
+                                <div data-target="#myCarousel" data-slide-to="0" class="thumb col-sm-4 col-4 active">
+                                    <img id="tshirtFront"
+                                        src="custom_img/tshirt_base_white_sleeve_white_collar_white_pattern_essential_patterncolor_plain.png"
+                                        alt="Customizable T-Shirt Front">
+                                </div>
+                                <div data-target="#myCarousel" data-slide-to="1" class="thumb col-sm-4 col-4">
+                                    <img id="tshirtBack"
+                                        src="custom_img/bs_tshirt_base_white_sleeve_white_collar_white_pattern_essential_patterncolor_plain.png"
+                                        alt="Customizable T-Shirt Back">         
+                                </div>
+                                <div data-target="#myCarousel" data-slide-to="2" class="thumb col-sm-4 col-4">
+                                    <img id="tshirtBack"
+                                        src="Size_Chart_Of_Unisex_Round_Neck.webp"
+                                        alt="Customizable T-Shirt Back">
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#thumbSlider" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#thumbSlider" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                </div>
+                <!-- Thumb-Slider-Element ends -->
+            </div>
+            <!-- left side bar  -->
+            <div class="col-lg-3 DesktopLayout">
+
+
+                <!-- Personalisation -->
+
+                <!-- Logo on Right Side -->
+                <h4>Sponser Logo - Right Side</h4>
+                <hr>
+                <div class="upload-box mb-4" id="uploadBox2">
+                    Drag & Drop or <span>Browse</span><br> PNG, WEBP
+                    <input type="file" id="fileInput2" style="display: none;">
+                    <div id="fileName2" class="file-name"></div>
+                </div>
+                <h3>Personalisation</h3>
+                <hr>
+                <div class="form-check">
+                    <input class="form-check-input radio-small" type="radio" name="personalisation"
+                        id="noPersonalisation" value="No Personalisation" >
+                    <label class="form-check-label font-soccer" for="noPersonalisation">No Personalisation</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input radio-small" type="radio" name="personalisation" id="playerDetails"
+                        value="Player Details" checked>
+                    <label class="form-check-label font-soccer" for="playerDetails" >Player Details</label>
+                </div>
+
+                <!-- Player Details Options -->
+                <div id="playerDetailsOptions" class="mt-3">
+                    <div class="mb-2">
+                        <label class="form-check-label" for="playerName">Player Name</label>
+                        <input type="text" class="form-control font-soccer" id="playerName" placeholder="Enter player name">
+                    </div>
+                    <div class="mb-2">
+                        <label class="form-check-label" for="playerNumber">Jersey Number</label>
+                        <input type="number" class="form-control font-soccer" id="playerNumber" placeholder="Enter jersey number">
+                    </div>
+                    <div class="mb-2">
+                        <label class="form-check-label" for="fontType">Font Type</label>
+                        <select id="fonttype" class="form-control mb-4">
+                            <option value="Poppins">Poppins</option>
+                            <option value="Arial">Arial</option>
+                            <option value="Courier New">Courier New</option>
+                            <option value="Georgia">Georgia</option>
+                        </select>
+                    </div>
+                    <div class="mb-2">
+                        <label class="form-check-label">Font Color</label><br>
+                        <button class="base-white" id="Whitefont" onclick="changeFontColor('white')"></button>
+                        <button class="base-black" id="blackfont" onclick="changeFontColor('black')"></button>
+                        <button class="base-red" id="redfont" onclick="changeFontColor('red')"></button>
+                        <button class="base-orange" id="bluefont" onclick="changeFontColor('orange')"></button>
+                        <button class="base-yellow" id="greenfont" onclick="changeFontColor('yellow')"></button>
+                        <button class="base-blue" id="bluefont" onclick="changeFontColor('blue')"></button>
+                        <button class="base-green" id="greenfont" onclick="changeFontColor('green')"></button>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+<!--=================== Mobile responsive Start===================-->
+
+<div class="container mobilelayout">
+    <div id="demo" class="carousel slide" data-ride="carousel">  
+        <div class="carousel-inner">
+
+
+            <div class="carousel-item active">  
+                <div class="carousel-caption">
+                    <h4>Choose Pattern</h4>
+                    <hr>
+                    <button class="small-png" onclick="changePattern('essential')"><img src="custom_img/tshirt_base_white_sleeve_white_collar_white_pattern_essential_patterncolor_plain.png" alt></button>
+                    <button class="small-png" onclick="changePattern('bottompieces')"><img src="custom_img/tshirt_base_white_sleeve_white_collar_white_pattern_bottompieces_patterncolor_blue.png" alt></button>
+                    <button class="small-png" onclick="changePattern('veins')"><img src="custom_img/tshirt_base_white_sleeve_white_collar_white_pattern_veins_patterncolor_blue.png" alt></button>
+                    <button class="small-png" onclick="changePattern('pieces')" disabled><img src="custom_img/tshirt_base_white_sleeve_white_collar_white_pattern_pieces_patterncolor_blue.png" alt></button>
+                </div>  
+            </div>
+
+
+            <div class="carousel-item">  
+                <div class="carousel-caption">
+                    <h4>Base Color</h4>
+                    <hr>
+                    <button class="base-white" onclick="changeTshirt('white', currentSleeveColor, currentCollarColor, currentPattern, currentPatternColor)"></button>
+                    <button class="base-black" onclick="changeTshirt('black', currentSleeveColor, currentCollarColor, currentPattern, currentPatternColor)"></button>
+                    <button class="base-red" onclick="changeTshirt('red', currentSleeveColor, currentCollarColor, currentPattern, currentPatternColor)"></button>
+                    <button class="base-blue" onclick="changeTshirt('blue', currentSleeveColor, currentCollarColor, currentPattern, currentPatternColor)"></button>
+                    <button class="base-orange" onclick="changeTshirt('orange', currentSleeveColor, currentCollarColor, currentPattern, currentPatternColor)"></button>
+                    <button class="base-yellow" onclick="changeTshirt('yellow', currentSleeveColor, currentCollarColor, currentPattern, currentPatternColor)"></button>
+                    <button class="base-green" onclick="changeTshirt('green', currentSleeveColor, currentCollarColor, currentPattern, currentPatternColor)"></button>
+                </div>
+            </div>
+            
+            
+            <div class="carousel-item">  
+                <div class="carousel-caption">
+                    <h4>Sleeve Color</h4>
+                    <hr>
+                    <button class="base-white" onclick="changeTshirt(currentBaseColor, 'white', currentCollarColor, currentPattern, currentPatternColor)"></button>
+                    <button class="base-black" onclick="changeTshirt(currentBaseColor, 'black', currentCollarColor, currentPattern, currentPatternColor)"></button>
+                    <button class="base-red" onclick="changeTshirt(currentBaseColor, 'red', currentCollarColor, currentPattern, currentPatternColor)"></button>
+                    <button class="base-blue" onclick="changeTshirt(currentBaseColor, 'blue', currentCollarColor, currentPattern, currentPatternColor)"></button>
+                    <button class="base-orange" onclick="changeTshirt(currentBaseColor, 'orange', currentCollarColor, currentPattern, currentPatternColor)"></button>
+                    <button class="base-yellow" onclick="changeTshirt(currentBaseColor, 'yellow', currentCollarColor, currentPattern, currentPatternColor)"></button>
+                    <button class="base-green" onclick="changeTshirt(currentBaseColor, 'green', currentCollarColor, currentPattern, currentPatternColor)"></button>
+                </div>  
+            </div>
+
+            <div class="carousel-item">  
+                <div class="carousel-caption">
+                    <h4>Pattern Color</h4>
+                    <hr>
+                    <button class="base-red" id="patternColorRed" onclick="changeTshirt(currentBaseColor, currentSleeveColor, currentCollarColor, currentPattern, 'red')"></button>
+                    <button class="base-blue" id="patternColorBlue" onclick="changeTshirt(currentBaseColor, currentSleeveColor, currentCollarColor, currentPattern, 'blue')"></button>
+                    <button class="base-green" id="patternColorGreen" onclick="changeTshirt(currentBaseColor, currentSleeveColor, currentCollarColor, currentPattern, 'green')"></button>
+                    <button class="base-orange" id="patternColorOrange" onclick="changeTshirt(currentBaseColor, currentSleeveColor, currentCollarColor, currentPattern, 'orange')"></button>
+                    <button class="base-white" id="patternColorWhite" onclick="changeTshirt(currentBaseColor, currentSleeveColor, currentCollarColor, currentPattern, 'white')"></button>
+                    <button class="base-black" id="patternColorBlack" onclick="changeTshirt(currentBaseColor, currentSleeveColor, currentCollarColor, currentPattern, 'black')"></button>
+                </div>  
+            </div>
+
+            <div class="carousel-item">  
+                <div class="carousel-caption">
+                    <h4>Collar Color</h4>
+                    <hr>
+                    <button class="base-white" onclick="changeTshirt(currentBaseColor, currentSleeveColor, 'white', currentPattern, currentPatternColor)"></button>
+                    <button class="base-black" id="blackcollar" onclick="changeTshirt(currentBaseColor, currentSleeveColor, 'black', currentPattern, currentPatternColor)"></button>
+                </div>  
+            </div>
+
+            <div class="carousel-item">  
+                <div class="carousel-caption">
+                    <h4>Team Logo - Left Side</h4>
+                    <hr>
+                    <div class="upload-box mb-4" id="uploadBoxMobile">
+                        Drag & Drop or <span>Browse</span><br> PNG, WEBP
+                        <input type="file" id="fileInputMobile" style="display: none;">
+                        <div id="fileName-mobile2" class="file-name"></div>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="carousel-item">  
+                <div class="carousel-caption">
+                    <h4>Sponser Logo - Right Side</h4>
+                    <hr>
+                    <div class="upload-box mb-4" id="uploadBoxMobile2">
+                        Drag & Drop or <span>Browse</span><br> PNG, WEBP
+                    <input type="file" id="fileInputMobile2" style="display: none;">
+                    <div id="fileNameMobile2" class="file-name"></div>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="carousel-item">  
+                <div class="carousel-caption">
+                    <h3>Personalisation</h3>
+                    <hr>
+                    <div class="form-check">
+                        <input class="form-check-input radio-small" type="radio" name="personalisation"
+                        id="noPersonalisation1" value="No Personalisation" >
+                    <label class="form-check-label font-soccer" for="noPersonalisation">No Personalisation</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input radio-small" type="radio" name="personalisation" id="playerDetails1"
+                        value="Player Details" checked>
+                    <label class="form-check-label font-soccer" for="playerDetails">Player Details</label>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="carousel-item">  
+                <div class="carousel-caption">
+                    
+                    <h4>Fill Name & Number</h4>
+                    <div id="playerDetailsOptions1" class="mt-3 d-flex">
+                        <div class="mb-2">
+                            <!-- <label for="playerName">Player Name</label> -->
+                            <input type="text" class="form-control" id="playerName" placeholder="Enter player name">
+                        </div>
+
+                        <div class="mb-2">
+                          <!-- <label for="playerNumber">Jersey Number</label> -->
+                          <input type="number" class="form-control" id="playerNumber" placeholder="Enter jersey number">
+                        </div>
+                    </div>
+
+                </div>  
+            </div>
+
+            <div class="carousel-item">  
+                <div class="carousel-caption">
+
+                    <h4>Font Type</h4>
+                    <div class="mb-2">
+                      <label for="fontType">Font Type</label>
+                      <input type="text" class="form-control" id="fontType" placeholder="Enter font type">
+                    </div>
+
+                </div>  
+            </div>
+
+            <div class="carousel-item">  
+                <div class="carousel-caption">
+
+                    <h4>Font Color</h4>
+                    <div class="mb-2">
+                      <label>Font Color</label><br>
+                      <button class="base-white"></button>
+                      <button class="base-black"></button>
+                    </div>
+
+                </div>  
+            </div>
+
+
+        </div> <a class="carousel-control-prev" href="#demo" data-slide="prev"> <i class='fas fa-arrow-left'> </i> </a> <a class="carousel-control-next" href="#demo" data-slide="next"> <i class='fas fa-arrow-right'> </i> </a>  
+    </div>  
+</div>
+
+
+
+<!--=================== Mobile responsive END===================-->
+
+
+
+
+
+
+
+  <!-- Footer Section Begin -->
+  <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-7">
+                <div class="footer__about">
+                    <div class="footer__logo">
+                        <a href="index.html"><img src="img/Shenic-Final-Logo.png" alt="" width="130px"></a>
+                    </div>
+                    <p>
+                        Sheinic India Private Limited offers this website, including all information, tools and services available from this site to you, the user
+                    </p>
+                    <div class="footer__payment">
+                        <a href="#"><img src="img/payment/payment-1.png" alt=""></a>
+                        <a href="#"><img src="img/payment/payment-2.png" alt=""></a>
+                        <a href="#"><img src="img/payment/payment-3.png" alt=""></a>
+                        <a href="#"><img src="img/payment/payment-4.png" alt=""></a>
+                        <a href="#"><img src="img/payment/payment-5.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-5">
+                <div class="footer__widget">
+                    <h6>Quick links</h6>
+                    <ul>
+                        <li><a href="shop.html">Customize</a></li>
+                        <li><a href="mens.html">Men’s</a></li>
+                        <li><a href="women.html">Women’s</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4">
+                <div class="footer__widget">
+                    <h6>Account</h6>
+                    <ul>
+                        <li><a href="checkout.html">My Account</a></li>
+                        <li><a href="checkout.html">Orders Tracking</a></li>
+                        <li><a href="checkout.html">Checkout</a></li>
+                        <li><a href="checkout.html">Wishlist</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-8 col-sm-8">
+                <div class="footer__newslatter">
+                    <h6>Updates</h6>
+                    <form action="#">
+                        <input type="text" placeholder="Email">
+                        <button type="submit" class="site-btn">Subscribe</button>
+                    </form>
+                    <!-- <div class="footer__social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-youtube-play"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="footer__copyright__text">
+                    <p>Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> All rights reserved with | Sheinic</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer Section End -->
+
+<!-- Search Begin -->
+<div class="search-model">
+    <div class="h-100 d-flex align-items-center justify-content-center">
+        <div class="search-close-switch">+</div>
+        <form class="search-model-form">
+            <input type="text" id="search-input" placeholder="Search here.....">
+        </form>
+    </div>
+</div>
+<!-- Search End -->
+
+<!-- Js Plugins -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/mixitup.min.js"></script>
+<script src="js/jquery.countdown.min.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/main.js"></script>
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- main js  -->
+    <script src="custom.js"></script>
+
+</body>
+
+</html>
